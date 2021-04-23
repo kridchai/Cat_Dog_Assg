@@ -14,9 +14,9 @@ int main(int argc, char *argv[])
    NODE *t;
 
    for(i=1;i<argc;i++) {
-        if(i%2)   t=new cat(i,atoi(argv[i]));
-         else  t=new dog(i,atof(argv[i]))
-         // t=new NODE(atoi(argv[i]));
+        //if(i%2)   t=new cat(i,atoi(argv[i]));
+        // else  t=new dog(i,atof(argv[i]));
+       t=new NODE(atoi(argv[i]));
                        A.add_node(t);
    }
    A.show_all();

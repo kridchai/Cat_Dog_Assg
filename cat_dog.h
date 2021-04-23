@@ -12,9 +12,10 @@ class cat:public NODE{
     int size;
 public:
   
-    cat(int x,int y)
+    cat(int x,int y):NODE(x)
     {
-      cout<<"constructor cat "<<y<<endl;
+      size = y;
+      cout<<"constructor cat "<<size<<endl;
     }
     ~cat(){
        cout<<"destructor cat "<<y<<endl;
@@ -29,9 +30,10 @@ public:
 class dog:public NODE{
     float height;
 public:
-    dog(int x,float y)
+    dog(int x,float y):NODE(x)
     {
-        cout<<"constructor dog "<<y<<endl;
+        height = y;
+        cout<<"constructor dog "<<height<<endl;
     }
     ~dog(){
        cout<<"destructor dog "<<y<<endl;
